@@ -1,0 +1,10 @@
+---
+
+const {paragraph,iconsUrl,linkPage} = Astro.props
+
+---
+
+<div class="hover:shadow-none flex flex-col justify-center items-start p-10 w-60 h-64 shadow-xl transition ease-in-out rounded-2xl duration-300 gap-5 md:w-80">
+    <img class="w-16 h-16 md:w-20 md:h-20" src=`../../imgs/${iconsUrl}` alt="">
+    <p class="font-bold text-center text-2xl text-titleColor "><a href={linkPage}> {paragraph} </a></p>
+</div>

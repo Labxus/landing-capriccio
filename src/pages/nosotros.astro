@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/layout.astro";
+import Chordion from "../components/chordion.astro";
+import InfoImg from "../components/infoImg.astro";
+import InfoBtn from "../components/infoBtn.astro";
+import InfoBtnImg from "../components/infoBtnImg.astro";
+import SecVisionMision from "../components/sections/secVisionMision.astro";
+import FromChordion from "../components/fromChordion.astro";
+
+import json from '../services/data/infoPage.json'
+
+---
+
+<Layout title="NOSOTROS - Ecoimpuestos">
+    <div class="w-[99wh] h-auto min-h-screen">
+
+        <!-- start section we -->
+        <div class="w-full h-60 bg-primaryContrast grid place-content-center">
+            <h2 class="font-bold text-5xl text-secondaryColor ">{json.infoNosotros.titleNosotros.title}</h2>
+        </div>
+        <!-- end section we -->
+
+
+        <!-- start section who we are   -->
+        <InfoImg title = {json.infoNosotros.whoWeAre.title}
+            paragraph = {json.infoNosotros.whoWeAre.paragraph}
+            imageUrl = {json.infoNosotros.whoWeAre.imageUrl}       
+        />
+        <!-- end section who we are  -->
+
+
+        <!-- start section our history  -->
+        <InfoImg title = {json.infoNosotros.ourHistory.title}
+                paragraph = {json.infoNosotros.ourHistory.paragraph}
+                imageUrl = {json.infoNosotros.ourHistory.imageUrl}
+                imgRight = {json.infoNosotros.ourHistory.imgRight}
+        />
+        <!-- end section our history -->
+
+        <!-- start  section vision and mision-->
+        <SecVisionMision JsonCards = {json.infoNosotros.visionMision.infoCard}
+            jsonGraph = {json.infoNosotros.visionMision.infoGraph}
+        />
+         <!-- end section vision and mision -->
+
+</Layout>

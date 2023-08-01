@@ -1,0 +1,40 @@
+---
+
+import type CardInfo from "../../interfaces/ICardInfo";
+import SecForm from "../../components/form.astro";
+
+const {title, paragraphOne, paragraphTwo, titleFrom,supParagraphFrom,infoCards,imgRight} = Astro.props
+
+---
+
+<div class="w-full h-auto flex flex-col justify-center items-center">
+    <div class=`container mx-auto h-auto flex flex-col justify-center items-center lg:justify-evenly lg:items-start lg:${imgRight?"flex-row-reverse":"flex-row"}`>
+        <div class="w-full h-auto flex flex-col text-white gap-5 mb-5 md:w-[30rem]">
+            <h3 class="font-bold text-3xl text-titleColor mb-4 text-center md:text-5xl">{title}</h3>
+            <div class="w-[95%] mx-auto h-auto flex flex-col gap-5 p-5 bg-titleColor rounded-xl md:w-full">
+                <p class="text-xl font-bold md:text-2xl">{paragraphOne}</p>
+                <p class="text-xl font-bold md:text-2xl">{paragraphTwo}</p>
+            </div>
+        </div>
+        <div class="lg:w-[30rem] lg:h-auto">
+            <SecForm supParagraph = {supParagraphFrom}
+            titleFrom = {titleFrom}
+            />
+        </div>
+    </div>
+
+    <div class="w-full h-auto bg-titleColor flex flex-col justify-center items-center md:flex-row md:flex-wrap md:gap-10">
+
+        {
+            infoCards.map( (data:CardInfo) => (
+                <div class="relative w-44 h-40 flex flex-col justify-center items-center bg-white rounded-xl m-10 shadow-xl">              
+                    <p class="text-xl text-center text-titleColor font-semibold">{data.infoUno}</p>
+                    <p class="absolute text-2xl flex justify-center items-center translate-x-20 translate-y-16 w-20 h-20  bg-twoTitleColor rounded-full">{data.infoDos}</p>
+                </div>
+            ))
+        }
+
+    </div>
+</div>
+
+

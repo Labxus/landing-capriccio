@@ -1,0 +1,26 @@
+---
+    
+import CardIcon from "../cardIcon.astro";
+import type ICardIcons from '../../interfaces/ICardIcons'
+
+const {title, supParagraph, jsonInfoHandleServices } = Astro.props
+
+---
+
+
+<div class="container mx-auto w-full h-auto flex flex-col justify-center  items-center gap-10 my-10 ">
+    <p class="font-normal text-xl text-[#009A58] text-center md:text-2xl">{supParagraph}</p>
+
+    <h3 class="font-bold text-4xl text-titleColor text-center md:text-5xl">{title}</h3>
+
+    <div class="w-full h-auto flex flex-wrap justify-center items-center gap-7 ">
+
+        {jsonInfoHandleServices.map (( services:ICardIcons) => (
+            <CardIcon iconsUrl = {services.iconsUrl}
+                linkPage = {services.linkPage}
+                paragraph = {services.paragraph}
+            />
+        ))}             
+
+    </div>
+</div>

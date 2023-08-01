@@ -1,0 +1,23 @@
+---
+
+import Layout from '../layouts/layout.astro'
+import SecInfoCard from '../components/sections/secInfoCard.astro';
+import json from '../services/data/infoPage.json'
+---
+
+<Layout title="Ecoimpuestos">
+    <div class="w-auto h-auto min-h-screen">
+
+        <!-- start section video -->
+        <div class="flex justify-center w-full h-screen ">
+            <iframe width="100%" height="100%" src="../../public/videos/capriccio_video.mp4" title="capriccio video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- end section video -->
+
+        <!-- start section info images --> 
+        <SecInfoCard json={json.infoIndex.infoCard}/>
+        <!-- end section info iamges -->
+        
+
+    </div>
+</Layout>

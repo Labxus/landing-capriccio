@@ -1,0 +1,26 @@
+---
+
+import type Percentages from '../interfaces/IPercentages'
+
+const {ourPercentages} = Astro.props
+
+
+---
+
+    <div class="w-72 flex flex-col justify-center items-center bg-gray-100 h-80 rounded-2xl p-5 shadow-xl md:w-[38rem]">
+        <div>
+            {ourPercentages.map( (percent:Percentages) => (
+
+            <div class="w-60 h-auto mb-5 md:w-[30rem]">
+                <div class="w-full h-auto flex justify-between mb-2">
+                    <h3 class="font-bold text-2xl md:text-3xl">{percent.name}</h3>
+                    <p class="md:text-xl">{percent.percent}%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-300">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style={`width: ${percent.percent}%;`}></div>
+                </div>
+            </div>                        
+            ))}
+        </div>
+
+    </div>

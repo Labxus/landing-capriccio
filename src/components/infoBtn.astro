@@ -1,0 +1,11 @@
+---
+const {title,paragraph,textBtn} = Astro.props
+---
+
+
+    <div class="w-full h-auto flex flex-col items-start justify-evenly px-5 gap-10 md:items-center md:px-10 lg:items-start lg:px-20 outline-none-">
+        <h2 class="font-bold text-4xl text-titleColor text-center md:text-5xl">{title}</h2>
+        <p class="text-lg text-justify ">{paragraph}</p>
+        <button class="px-7 py-3 bg-btnColor border border-btnColor rounded-full text-white mx-auto transition ease-in-out hover:bg-transparent hover:text-titleColor hover:border hover:border-[#1CB9C8] md:px-20 md:py-5 md:text-xl lg:px-15 lg:py-3">{textBtn}</button>
+    </div>
+

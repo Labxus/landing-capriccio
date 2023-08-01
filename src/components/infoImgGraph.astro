@@ -1,0 +1,40 @@
+---
+
+import type Percentages from '../interfaces/IPercentages'
+
+const {title, paragraph, imageUrl, supParagraph, percentages, imgRight} = Astro.props
+
+---
+
+<div class= `w-full h-auto flex flex-wrap justify-center items-center p-2 mb-10 gap-10 ${imgRight? 'flex-row-reverse': 'flex-row'}`>
+
+    <div class="w-10/12 h-80 hidden md:block md:w-96 md:h-auto lg:w-[35rem] y ">
+        <img class="w-full h-full object-cover object-top rounded-xl" src=`../../public/imgs/${imageUrl}` alt="">
+    </div>
+
+    <div class="flex w-full h-auto flex-col items-center justify-center p-5 gap-10  md:w-full md:p-10 lg:w-[40rem] ">
+        <h3 class="font-bold text-4xl text-titleColor text-center md:text-5xl"> {title} </h3>
+        <p class="text-xl text-justify"> {paragraph} </p>
+
+        <div class="w-full">
+            <p class="text-center font-bold text-titleColor mb-10 md:text-5xl"> {supParagraph} </p>
+
+            {percentages.map( (percent:Percentages) => (
+
+            <div class="w-full h-auto mb-5 md:w-[35rem]">
+                <div class="w-full h-auto flex justify-between mb-2">
+                    <h3 class="font-bold text-2xl md:text-3xl">{percent.name}</h3>
+                    <p class="md:text-xl ">{percent.percent}%</p>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-300">
+                    <div class="bg-blue-600 h-2.5 rounded-full" style={`width: ${percent.percent}%;`}></div>
+                </div>
+            </div>     
+
+            ))}
+
+        </div>
+
+    </div>
+
+</div>

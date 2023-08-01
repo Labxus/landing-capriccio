@@ -1,0 +1,10 @@
+---
+
+const {title,paragraph} = Astro.props
+
+---
+
+<div class="w-96 flex flex-col justify-center bg-primaryContrast items-center h-80 rounded-2xl p-2 shadow-2xl md:w-[38rem] lg:w-[32rem]">
+    <h2 class="font-bold text-4xl text-secondaryColor mb-4 md:text-4xl">{title}</h2>
+    <p class="md:px-10 text-xl text-center text-secondaryColor">{paragraph}</p>
+</div>

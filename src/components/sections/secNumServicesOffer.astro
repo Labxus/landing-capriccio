@@ -1,0 +1,20 @@
+---
+
+import type ServicesOffer from "../../interfaces/IServicesOffer";
+
+const {servicesOffer} = Astro.props
+
+---
+
+<div class="w-full h-80 flex flex-wrap justify-center items-center bg-[url('../../public/imgs/counter-bg-1-1.jpg')] bg-cover bg-center text-white mt-10 lg:justify-evenly bg-titleColor">
+
+    {
+        servicesOffer.map((services:ServicesOffer) => (
+            <div class="w-40 h-auto text-center">
+                <p class="text-5xl font-bold">{services.cantServices}</p>
+                <p class="text-xl">{services.topicServices}</p>
+            </div>
+        ))
+    }
+
+</div>

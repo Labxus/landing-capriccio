@@ -1,0 +1,127 @@
+{
+    "infoIndex" : {
+        "infoLeyes" : [
+            {
+                "title" : "Lorem ipsum dolor sit amet.",
+                "paragraph" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis perferendis officiis similique doloribus reiciendis possimus ipsum at facilis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus fugiat. Libero asperiores assumenda rerum voluptates itaque placeat saepe eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae accusamus dicta aspernatur minima laudantium est neque repellendus omnis eum."
+            },
+            {
+                "title" : "Lorem ipsum dolor sit amet.",
+                "paragraph" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis perferendis officiis similique doloribus reiciendis possimus ipsum at facilis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus fugiat. Libero asperiores assumenda rerum voluptates itaque placeat saepe eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae accusamus dicta aspernatur minima laudantium est neque repellendus omnis eum."
+            },
+            {
+                "title" : "Lorem ipsum dolor sit amet.",
+                "paragraph" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis perferendis officiis similique doloribus reiciendis possimus ipsum at facilis veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus fugiat. Libero asperiores assumenda rerum voluptates itaque placeat saepe eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae accusamus dicta aspernatur minima laudantium est neque repellendus omnis eum."
+            }
+        ],
+        "infoCard" :[
+            {
+                "title" : "Somos el club de los que saben de pizza ",
+                "imageUrl" : "fondo.jpg"
+            },
+            {
+                "title" : "Amasado a mano con técnicas centenarias de los mejores pizzaiolos italianos ",
+                "imageUrl" : "fondo.jpg"
+            },
+            {
+                "title" : "Fermentado y madurado de la masa durante 72 horas ",
+                "imageUrl" : "fondo.jpg"
+            },
+            {
+                "title" : "Usamos los auténticos tomates san Marzano italianos ",
+                "imageUrl" : "fondo.jpg"
+            },
+            {
+                "title" : "Horneamos con leña como lo dice la tradición ",
+                "imageUrl" : "fondo.jpg"
+            }
+        ]
+    },
+    "infoNosotros" : {
+        "titleNosotros" : {
+            "title" : "NOSOTROS"
+        }, 
+        "whoWeAre" : {
+            "title": "¿Quienes somos?",
+            "paragraph" : "Todo nace después de un viaje a Europa, donde los olores colores y sabores cautivaron a nuestro cofundador, allí se empleo en diferentes trabajos, hasta llegar a una pizzería donde aprendería técnicas, secretos y estilos de pizza, descubrió su pasión por la pizza pero sobre todo por las experiencias que vivimos con algo tan noble y completo cuando se hace correctamente y con amor.",       
+            "imageUrl" : "Estrategia-Genérica.jpg" 
+        },
+        "ourHistory" : {
+            "title": "Nuestra historia",
+            "paragraph": "Todo nace después de un viaje a Europa, donde los olores colores y sabores cautivaron a nuestro cofundador, allí se empleo en diferentes trabajos, hasta llegar a una pizzería donde aprendería técnicas, secretos y estilos de pizza, descubrió su pasión por la pizza pero sobre todo por las experiencias que vivimos con algo tan noble y completo cuando se hace correctamente y con amor.",
+            "imageUrl" : "Estrategia-Genérica.jpg",
+            "imgRight" : true
+        },
+        "visionMision" : {
+            "infoCard" : [
+                {
+                    "title" : "Nuestra misión" ,
+                    "paragraph" : "Creamos una experiencia única de al alcance de todas las personas."
+                },
+                {
+                    "title" : "Nuestra Visión",
+                    "paragraph" : "Ser deliciosa, tradicional, única, y accesible para todos."
+                }
+            ]
+        }
+    },
+    "productos" : {
+        "titleProductos" : {
+            "title" : "PRODUCTOS"
+        },
+        "producto" : "Pizzas",
+        "infoCards" : [
+            {
+                "infoUno" : "Pizza Margarita",
+                "infoDos" : "Sobre una base de masa madurada, acompañada de una salsa de tomates san marzano, queso mozzarella, queso parmesano, y perfumada con aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza Pollo queso",
+                "infoDos" : "Una base de pan crocante madurado, acompañada de salsa de tomates san marzano, queso mozzarella, pollo desmenuzado, y perfumada con aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza Iberica",
+                "infoDos" : "Masa madurada, tomate san Marzano, queso mozzarella, queso manchego, Jamón serrano, chorizo español aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza Diavola",
+                "infoDos" : "Masa madurada, tomate san Marzano, queso mozzarella, queso parmesano, pepperoni aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza Vegetariana",
+                "infoDos" : "Masa madurada, tomate san Marzano. Queso mozzarella, Cebolla, Tomate, Pimentón, Champiñones, Aceitunas, aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza Carbonara",
+                "infoDos" : "Masa madurada, base de salsa carbonara, queso mozzarella, queso parmesano. bacon, cebolla, aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza cuatro quesos",
+                "infoDos" : "Masa madurada, tomate san Marzano, queso mozzarella, queso manchego, Queso ricotta, Queso, parmesano, aceite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza Piero di carnes",
+                "infoDos" : "Masa madurada, tomate san Marzano, Queso mozzarella, Queso parmesano, Pollo, Bacon, Jamón serrano, Pepperoni, accite de oliva y albahaca fresca."
+            },
+            {
+                "infoUno" : "Pizza cosa nostra",
+                "infoDos" : "Masa madurada, tomate san Marzano, Queso mozzarella, Queso parmesano, Queso Siracciarella, Bacon confitado, Jamon serrano, salsa pesto."
+            }
+            
+        ]
+    },
+    "InfoNavbar" : [
+        {
+            "title" : "INICIO OFICIAL",
+            "link" : "/"
+        },
+        {
+            "title" : "NOSOTROS",
+            "link" : "/nosotros"
+        },
+        {
+            "title" : "PRODUCTOS",
+            "link" : "/productos"
+        }
+    ]
+}

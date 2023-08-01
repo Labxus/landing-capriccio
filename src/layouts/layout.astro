@@ -1,0 +1,39 @@
+---
+
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/footer.astro";
+
+ const {title} = Astro.props
+
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+		<title>{title}</title>
+	</head>
+	<body>
+
+		<script src="../components/script.js"></script>
+		
+		<div class="bg-secondaryColor">	
+
+			<Navbar />
+
+			<div class="w-screen lg:w-[98.75vw] ">
+				<slot />
+			</div>
+			
+
+			<Footer address = "Lorem ipsum dolor sit amet"
+				phone = "Lorem ipsum dolor sit amet "
+				city = "Lorem ipsum dolor"
+			/>
+
+		</div>
+	</body>
+</html>
