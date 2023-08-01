@@ -43,13 +43,13 @@
         }, 
         "whoWeAre" : {
             "title": "¿Quienes somos?",
-            "paragraph" : "Todo nace después de un viaje a Europa, donde los olores colores y sabores cautivaron a nuestro cofundador, allí se empleo en diferentes trabajos, hasta llegar a una pizzería donde aprendería técnicas, secretos y estilos de pizza, descubrió su pasión por la pizza pero sobre todo por las experiencias que vivimos con algo tan noble y completo cuando se hace correctamente y con amor.",       
-            "imageUrl" : "Estrategia-Genérica.jpg" 
+            "paragraph" :"Somos un emprendimiento joven, que busca llevar los auténticos sabores italianos a cada uno de los momentos especiales de nuestras mesas colombianas, vivimos en el país mas bonito y biodiverso del mundo, con la gente más alegre y emprendedora, por ello decidimos ofrecer una experiencia más que una compra.",       
+            "imageUrl" : "undraw_Questions_re_1fy7.png" 
         },
         "ourHistory" : {
             "title": "Nuestra historia",
-            "paragraph": "Todo nace después de un viaje a Europa, donde los olores colores y sabores cautivaron a nuestro cofundador, allí se empleo en diferentes trabajos, hasta llegar a una pizzería donde aprendería técnicas, secretos y estilos de pizza, descubrió su pasión por la pizza pero sobre todo por las experiencias que vivimos con algo tan noble y completo cuando se hace correctamente y con amor.",
-            "imageUrl" : "Estrategia-Genérica.jpg",
+            "paragraph": "Todo nace después de un viaje a Europa, donde los olores colores y sabores cautivaron a nuestro cofundador, allí se empleó en diferentes trabajos, hasta llegar a una pizzería donde aprendería técnicas, secretos y estilos de pizza, descubrió su pasión por la pizza pero sobre todo por las experiencias que vivimos con algo tan noble y completo cuando se hace correctamente y con amor.",
+            "imageUrl" : "undraw_real_time_analytics_re_yliv.png",
             "imgRight" : true
         },
         "visionMision" : {

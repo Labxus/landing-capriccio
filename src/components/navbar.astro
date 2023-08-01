@@ -8,7 +8,7 @@ import type Links from '../interfaces/ILinks'
 <header class="w-[100%] z-50 h-auto flex flex-col justify-center items-center bg-primaryContrast opacity-90 text-secondaryColor px-5   md:fixed md:flex-row md:gap-10 md:justify-evenly lg:justify-between">
 
     <a href="/">
-        <div class="w-36 h-auto flex justify-center  items-center md:ml-20">
+        <div class="w-36 h-auto flex justify-center mt-3 items-center md:ml-20">
             <img class="w-20 h-auto md:w-50 md:my-4 lg:h-auto " src=`../imgs/Logo_Capriccio_Pizza_Artesanal.png` alt="">
             <h2 class="md:block text-4xl font-bold ml-3 text-">CAPRICCIO</h2>
         </div>
@@ -16,7 +16,7 @@ import type Links from '../interfaces/ILinks'
 
     <div id="navLinks" class="relative flex w-full h-20 z-50 justify-between items-center md:justify-evenly md:w-[26rem] lg:mr-10">
         <div class="flex w-full h-auto justify-between items-center md:hidden">
-            <div id="menuNav" class="w-10 h-10 flex items-center gap-3 py-10">
+            <div id="menuNav" class="w-10 h-10 flex cursor-pointer items-center gap-3 py-10">
                 <i class="ti ti-menu-2 text-2xl"></i>
                 <p>MENU</p>
             </div>
@@ -28,14 +28,14 @@ import type Links from '../interfaces/ILinks'
             <ul class="flex flex-col gap-5 md:flex-row mt-5 md:mt-0 lg:gap-4">
                 {
                     json.InfoNavbar.map( (info:Links) => (
-                        <li id="subMenu" class="hoverServices"><a class="transition hover:text-tertiaryColor" href={info.link}>{info.title}</a>
+                        <li id="subMenu" class="hoverServices"><a class="transition font-semibold hover:text-tertiaryColor" href={info.link}>{info.title}</a>
 
                             {
                                 info.subMenu == undefined ? console.log('no') : 
                                     <ul id="subLinks" class="contServices  max-md:w-full max-md:h-auto md:-translate-x-16 hidden max-md:mt-4">
                                         {
                                             info.subMenu?.map( (subInfo:Links) => (
-                                                <li class="w-full h-10  text-white flex justify-start items-center mx-3 my-5 max-md:m-5 md:justify-center"><a class="transition hover:text-[#1CB9C8]" href={subInfo.link}>{subInfo.title}</a></li>
+                                                <li class="w-full h-10  text-white flex justify-start items-center mx-3 my-5 max-md:m-5 md:justify-center"><a class="transition font-semibold hover:text-[#1CB9C8]" href={subInfo.link}>{subInfo.title}</a></li>
                                             ))
                                         }
                                     </ul>
