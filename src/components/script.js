@@ -1,5 +1,6 @@
 // script handle of chordion
 
+
 const chordion = document.querySelectorAll('.chordion')
 
 chordion.forEach( (item) => {

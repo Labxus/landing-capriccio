@@ -3,7 +3,7 @@
 import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
 
- const {title} = Astro.props
+const {title} = Astro.props
 
 ---
 
@@ -13,6 +13,7 @@ import Footer from "../components/footer.astro";
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 		<title>{title}</title>
 	</head>
@@ -35,5 +36,12 @@ import Footer from "../components/footer.astro";
 			/>
 
 		</div>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			import AOS from 'aos';
+			import 'aos/dist/aos.css'; // You can also use <link> for styles
+			// ..
+			AOS.init();
+		</script>
 	</body>
 </html>
