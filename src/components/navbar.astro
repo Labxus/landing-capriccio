@@ -1,19 +1,18 @@
 ---
 import '../css/style.css'
-
 import json from '../services/data/infoPage.json'
 import type Links from '../interfaces/ILinks'
 
 ---
 
-<header class="w-[100%] h-auto flex flex-col justify-center items-center bg-primaryContrast opacity-90 text-secondaryColor px-5   md:fixed md:flex-row md:gap-10 md:justify-evenly md:h-20 lg:justify-between">
+<header class="w-[100%] z-50 h-auto flex flex-col justify-center items-center bg-primaryContrast opacity-90 text-secondaryColor px-5   md:fixed md:flex-row md:gap-10 md:justify-evenly md:h-20 lg:justify-between">
 
     <div class="w-36 h-auto flex justify-start items-center lg:ml-10">
         <img class="w-full h-full lg:w-16 lg:h-auto " src=`../imgs/Logo_Capriccio_Pizza_Artesanal.png` alt="">
         <h2 class="hidden md:block text-4xl font-bold lg:ml-3 text-">CAPRICCIO</h2>
     </div>
 
-    <div id="navLinks" class="relative flex w-full h-20 justify-between items-center md:justify-evenly md:w-[26rem] lg:mr-10">
+    <div id="navLinks" class="relative flex w-full h-20 z-50 justify-between items-center md:justify-evenly md:w-[26rem] lg:mr-10">
         <div class="flex w-full h-auto justify-between items-center md:hidden">
             <div id="menuNav" class="w-10 h-10 flex items-center gap-3 py-10">
                 <i class="ti ti-menu-2 text-2xl"></i>
