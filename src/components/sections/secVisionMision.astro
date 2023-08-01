@@ -8,7 +8,7 @@ const {JsonCards,jsonGraph} = Astro.props
 
 ---
 
-<div  data-aos="fade-up" class="container mx-auto w-[90vw] h-auto flex py-10 justify-evenly items-center flex-wrap gap-10">
+<div  class="container mx-auto w-[90vw] h-auto flex py-10 justify-evenly items-center flex-wrap gap-10">
 
     {JsonCards.map( (card:Card) => (
             <CardMini title = {card.title}
