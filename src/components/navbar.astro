@@ -31,7 +31,7 @@ import type Links from '../interfaces/ILinks'
                         <li id="subMenu" class="hoverServices"><a class="transition font-semibold hover:text-tertiaryColor" href={info.link}>{info.title}</a>
 
                             {
-                                info.subMenu == undefined ? console.log('no') : 
+                                info.subMenu == undefined ? null : 
                                     <ul id="subLinks" class="contServices  max-md:w-full max-md:h-auto md:-translate-x-16 hidden max-md:mt-4">
                                         {
                                             info.subMenu?.map( (subInfo:Links) => (
